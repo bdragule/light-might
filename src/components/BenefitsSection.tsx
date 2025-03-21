@@ -61,6 +61,9 @@ const BenefitsSection = () => {
                   alt="Man standing by Jeep" 
                   className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
                 />
+                <p className="text-sm italic mt-2 text-lightmight-dark/80">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </div>
             </ScrollReveal>
           </div>
