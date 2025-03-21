@@ -31,11 +31,16 @@ const AboutSection = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <ScrollReveal delay={200}>
-              <img 
-                src="/lovable-uploads/c81730eb-d0ca-46e4-8c15-205c1f6d221c.png" 
-                alt="Red light therapy treatment" 
-                className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
-              />
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/c81730eb-d0ca-46e4-8c15-205c1f6d221c.png" 
+                  alt="Red light therapy treatment" 
+                  className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
+                />
+                <p className="text-sm italic mt-2 text-lightmight-dark/80">
+                  Two weeks ago her morning training walk was not possible.
+                </p>
+              </div>
             </ScrollReveal>
 
             <div>
