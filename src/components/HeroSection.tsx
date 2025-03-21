@@ -21,8 +21,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Rejuvenate Your Skin<br />
-            <span className="text-lightmight-red">At The Cellular Level</span>
+            Welcome to Healing that Starts<br />
+            <span className="text-lightmight-red">at the Cellular Level</span>
           </motion.h1>
 
           <motion.p 
