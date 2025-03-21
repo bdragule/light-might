@@ -28,18 +28,26 @@ const Header = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between relative">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
+          className="absolute" 
+          style={{ 
+            top: "-20px", 
+            left: "-50px", 
+            zIndex: 60 
+          }}
         >
           <img 
-            src="/lovable-uploads/437d98ee-9fcc-464a-8786-5e4e099c5007.png" 
+            src="/lovable-uploads/afbf2ba0-3062-4aa0-b8a0-4a351f48b5d8.png" 
             alt="Light Might Logo" 
-            className="h-10 md:h-12"
+            className="h-32 md:h-40"
           />
         </motion.div>
+        
+        <div className="w-32 md:w-40"></div> {/* Spacer to account for the logo */}
         
         <nav className="hidden md:flex space-x-8">
           {["About", "Benefits", "Science", "Contact"].map((item, i) => (

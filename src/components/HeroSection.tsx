@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-40">
       <div className="absolute inset-0 z-0">
         <img 
           src="/lovable-uploads/c81730eb-d0ca-46e4-8c15-205c1f6d221c.png" 
