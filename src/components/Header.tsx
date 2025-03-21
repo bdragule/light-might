@@ -35,7 +35,7 @@ const Header = () => {
         <img 
           src="/lovable-uploads/afbf2ba0-3062-4aa0-b8a0-4a351f48b5d8.png" 
           alt="Light Might Logo" 
-          className="h-48 md:h-60"
+          className="h-62 md:h-78" // Increased from h-48 md:h-60 to h-62 md:h-78 (30% larger)
         />
       </motion.div>
       
