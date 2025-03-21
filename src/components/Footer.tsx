@@ -17,7 +17,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/437d98ee-9fcc-464a-8786-5e4e099c5007.png" 
               alt="Light Might Logo" 
-              className="h-12 mb-4 invert"
+              className="h-12 mb-4"
             />
             <p className="text-white/70 text-sm mt-4 font-light tracking-wide">
               Cutting-edge Photobiomodulation therapy to rejuvenate your skin at the cellular level.
