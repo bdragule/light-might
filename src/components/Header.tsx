@@ -35,19 +35,19 @@ const Header = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="absolute" 
           style={{ 
-            top: "-20px", 
-            left: "-50px", 
+            top: "-40px", 
+            left: "-20px", 
             zIndex: 60 
           }}
         >
           <img 
             src="/lovable-uploads/afbf2ba0-3062-4aa0-b8a0-4a351f48b5d8.png" 
             alt="Light Might Logo" 
-            className="h-32 md:h-40"
+            className="h-48 md:h-60"
           />
         </motion.div>
         
-        <div className="w-32 md:w-40"></div> {/* Spacer to account for the logo */}
+        <div className="w-40 md:w-48"></div> {/* Spacer to account for the larger logo */}
         
         <nav className="hidden md:flex space-x-8">
           {["About", "Benefits", "Science", "Contact"].map((item, i) => (
