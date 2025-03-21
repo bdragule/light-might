@@ -57,8 +57,8 @@ const BenefitsSection = () => {
             <ScrollReveal delay={200} className="order-1 md:order-2">
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/9cbb0630-6722-44e5-9877-b4608ee40840.png" 
-                  alt="Woman in Tucson desert" 
+                  src="/lovable-uploads/27a6bd48-f6a6-4963-93b0-3f25fed2798d.png" 
+                  alt="Woman with athletic wear" 
                   className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
                 />
                 <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg max-w-xs">
