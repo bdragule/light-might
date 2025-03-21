@@ -28,11 +28,21 @@ const Header = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between relative">
+        {/* Large logo positioned to bleed off the left and top of the page */}
+        <div className="absolute -top-20 -left-20 pointer-events-none z-0">
+          <img 
+            src="/lovable-uploads/692e0c87-28ab-42cb-8a55-74ddcd3783fa.png" 
+            alt="Light Might Hero Logo" 
+            className="w-[400px] md:w-[500px] max-w-none"
+          />
+        </div>
+        
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
+          className="relative z-10"
         >
           <img 
             src="/lovable-uploads/437d98ee-9fcc-464a-8786-5e4e099c5007.png" 
@@ -41,7 +51,7 @@ const Header = () => {
           />
         </motion.div>
         
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-8 relative z-10">
           {["About", "Benefits", "Science", "Contact"].map((item, i) => (
             <motion.a
               key={item}
@@ -57,7 +67,7 @@ const Header = () => {
         </nav>
         
         <motion.div
-          className="md:hidden"
+          className="md:hidden relative z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
