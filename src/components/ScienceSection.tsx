@@ -19,8 +19,8 @@ const ScienceSection = () => {
             <ScrollReveal delay={200}>
               <div className="bg-gradient-radial from-lightmight-red/20 to-transparent p-8 rounded-xl">
                 <img 
-                  src="/lovable-uploads/692e0c87-28ab-42cb-8a55-74ddcd3783fa.png" 
-                  alt="Light Might Symbol" 
+                  src="/lovable-uploads/d9a6a481-520c-4a9e-b202-85408c4e85cb.png" 
+                  alt="Woman receiving red light therapy" 
                   className="w-24 mx-auto mb-6"
                 />
                 <p className="text-lg mb-6 text-balance">
