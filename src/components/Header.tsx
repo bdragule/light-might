@@ -46,7 +46,7 @@ const Header = () => {
             <motion.a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="text-lightmight-dark hover:text-lightmight-red transition-colors font-medium"
+              className="text-white hover:text-lightmight-red transition-colors font-medium"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * (i + 1), duration: 0.5 }}
@@ -63,7 +63,7 @@ const Header = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
         >
           <button 
-            className="p-2 text-lightmight-dark hover:text-lightmight-red transition-colors"
+            className="p-2 text-white hover:text-lightmight-red transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />

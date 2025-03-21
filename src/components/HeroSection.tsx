@@ -13,21 +13,17 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-lightmight-dark/40 to-lightmight-dark/80"></div>
       </div>
 
+      {/* Large logo with red dots positioned to bleed off the page */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <img 
+          src="/lovable-uploads/692e0c87-28ab-42cb-8a55-74ddcd3783fa.png" 
+          alt="Light Might Pattern"
+          className="absolute -top-[20%] -left-[10%] w-[70%] max-w-none opacity-80"
+        />
+      </div>
+
       <div className="container mx-auto px-4 md:px-6 relative z-10 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="mb-6"
-          >
-            <img 
-              src="/lovable-uploads/692e0c87-28ab-42cb-8a55-74ddcd3783fa.png" 
-              alt="Light Might Symbol"
-              className="w-24 md:w-32 mx-auto mb-6 animate-pulse-light"
-            />
-          </motion.div>
-
           <motion.h1 
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight"
             initial={{ opacity: 0, y: 30 }}
