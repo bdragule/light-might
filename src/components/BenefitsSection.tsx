@@ -57,18 +57,10 @@ const BenefitsSection = () => {
             <ScrollReveal delay={200} className="order-1 md:order-2">
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/27a6bd48-f6a6-4963-93b0-3f25fed2798d.png" 
-                  alt="Woman with athletic wear" 
+                  src="/lovable-uploads/36f57679-45fa-4e2c-96bf-f73b9c824b70.png" 
+                  alt="Man standing by Jeep" 
                   className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
                 />
-                <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg max-w-xs">
-                  <p className="text-sm font-medium text-lightmight-red">
-                    Traditional PBM vs Light Might
-                  </p>
-                  <p className="text-xs text-lightmight-dark mt-1">
-                    Get results in fewer sessions with our advanced approach
-                  </p>
-                </div>
               </div>
             </ScrollReveal>
           </div>
