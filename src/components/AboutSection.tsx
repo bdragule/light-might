@@ -30,7 +30,7 @@ const AboutSection = () => {
               <img 
                 src="/lovable-uploads/c81730eb-d0ca-46e4-8c15-205c1f6d221c.png" 
                 alt="Red light therapy treatment" 
-                className="rounded-lg shadow-xl w-full h-96 object-cover object-center red-glow"
+                className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
               />
             </ScrollReveal>
 
