@@ -6,8 +6,8 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-40">
       <div className="absolute inset-0 z-0">
         <img 
-          src="/lovable-uploads/c81730eb-d0ca-46e4-8c15-205c1f6d221c.png" 
-          alt="Woman receiving red light therapy"
+          src="/lovable-uploads/56e62cbb-6ef9-4edf-9032-5110f59b2cd5.png" 
+          alt="Woman with red light therapy"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-lightmight-dark/40 to-lightmight-dark/80"></div>
