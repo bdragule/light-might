@@ -35,7 +35,7 @@ const Header = () => {
         <img 
           src="/lovable-uploads/afbf2ba0-3062-4aa0-b8a0-4a351f48b5d8.png" 
           alt="Light Might Logo" 
-          className="h-16 md:h-20" // Adjusted to be 30% larger than original but not excessive
+          className="h-48 md:h-60"
         />
       </motion.div>
       
