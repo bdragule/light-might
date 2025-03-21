@@ -42,17 +42,26 @@ const AboutSection = () => {
               </ScrollReveal>
 
               <ScrollReveal delay={400}>
-                <h3 className="text-lg font-light mb-3 text-lightmight-red tracking-wide">
+                <h3 className="text-lg font-light mb-4 text-lightmight-red tracking-wide">
                   PBM effectively treats a wide range of conditions<sup className="superscript">2</sup>, including:
                 </h3>
               </ScrollReveal>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {conditions.map((condition, index) => (
+              <div className="grid grid-cols-2 gap-x-4 gap-y-3">
+                {conditions.slice(0, Math.ceil(conditions.length/2)).map((condition, index) => (
                   <ScrollReveal key={index} delay={500 + (index * 50)}>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 rounded-full bg-lightmight-red"></div>
-                      <p className="text-lightmight-dark font-light tracking-wide">{condition}</p>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 rounded-full bg-lightmight-red mt-2 flex-shrink-0"></div>
+                      <p className="text-lightmight-dark font-light">{condition}</p>
+                    </div>
+                  </ScrollReveal>
+                ))}
+                
+                {conditions.slice(Math.ceil(conditions.length/2)).map((condition, index) => (
+                  <ScrollReveal key={index + Math.ceil(conditions.length/2)} delay={500 + ((index + Math.ceil(conditions.length/2)) * 50)}>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 rounded-full bg-lightmight-red mt-2 flex-shrink-0"></div>
+                      <p className="text-lightmight-dark font-light">{condition}</p>
                     </div>
                   </ScrollReveal>
                 ))}
