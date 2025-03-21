@@ -17,10 +17,10 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-2 text-lightmight-dark text-center">
+            <h2 className="text-3xl md:text-4xl font-light mb-2 text-lightmight-dark text-center tracking-wider">
               What is <span className="text-lightmight-red">Photobiomodulation?</span>
             </h2>
-            <p className="text-xl text-center mb-12 text-lightmight-dark/70 font-light">
+            <p className="text-xl text-center mb-12 text-lightmight-dark/70 font-extralight tracking-wide">
               Harnessing Light for Healing
             </p>
           </ScrollReveal>
@@ -42,7 +42,7 @@ const AboutSection = () => {
               </ScrollReveal>
 
               <ScrollReveal delay={400}>
-                <h3 className="text-lg font-semibold mb-3 text-lightmight-red">
+                <h3 className="text-lg font-light mb-3 text-lightmight-red tracking-wide">
                   PBM effectively treats a wide range of conditions<sup className="superscript">2</sup>, including:
                 </h3>
               </ScrollReveal>
@@ -52,7 +52,7 @@ const AboutSection = () => {
                   <ScrollReveal key={index} delay={500 + (index * 50)}>
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 rounded-full bg-lightmight-red"></div>
-                      <p className="text-lightmight-dark">{condition}</p>
+                      <p className="text-lightmight-dark font-light tracking-wide">{condition}</p>
                     </div>
                   </ScrollReveal>
                 ))}

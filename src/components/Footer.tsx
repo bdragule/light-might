@@ -19,14 +19,14 @@ const Footer = () => {
               alt="Light Might Logo" 
               className="h-12 mb-4 invert"
             />
-            <p className="text-white/70 text-sm mt-4">
+            <p className="text-white/70 text-sm mt-4 font-light tracking-wide">
               Cutting-edge Photobiomodulation therapy to rejuvenate your skin at the cellular level.
             </p>
           </div>
           
           <div className="md:col-span-1">
-            <h3 className="text-lg font-medium mb-4">Contact Us</h3>
-            <div className="space-y-2 text-white/80">
+            <h3 className="text-lg font-light mb-4 tracking-wider">Contact Us</h3>
+            <div className="space-y-2 text-white/80 font-light">
               <p>ViveLife! Center: (520) 797-9131</p>
               <p>Email: pollyleigh@vivelifecenter.com</p>
               <p>Locations: Tucson, AZ & Austin, TX</p>
@@ -34,8 +34,8 @@ const Footer = () => {
           </div>
           
           <div className="md:col-span-1">
-            <h3 className="text-lg font-medium mb-4">Quick Links</h3>
-            <div className="space-y-2">
+            <h3 className="text-lg font-light mb-4 tracking-wider">Quick Links</h3>
+            <div className="space-y-2 font-light">
               <p><a href="#about" className="text-white/80 hover:text-white transition-colors">About PBM</a></p>
               <p><a href="#benefits" className="text-white/80 hover:text-white transition-colors">Benefits</a></p>
               <p><a href="#science" className="text-white/80 hover:text-white transition-colors">The Science</a></p>
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/20 pt-6 text-xs text-white/60">
+        <div className="border-t border-white/20 pt-6 text-xs text-white/60 font-extralight tracking-wide">
           <div className="space-y-2">
             {disclaimers.map((disclaimer, index) => (
               <p key={index} className="flex items-start">
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/20 mt-6 pt-6 text-center text-sm text-white/50">
+        <div className="border-t border-white/20 mt-6 pt-6 text-center text-sm text-white/50 font-light">
           <p>© {new Date().getFullYear()} Light Might. All rights reserved.</p>
           <p className="mt-2">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
