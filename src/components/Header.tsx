@@ -33,17 +33,17 @@ const Header = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="z-60" 
+          className="absolute" 
           style={{ 
-            position: "relative",
-            top: "-15px", 
-            left: "10px"
+            top: "-40px", 
+            left: "-20px", 
+            zIndex: 60 
           }}
         >
           <img 
             src="/lovable-uploads/afbf2ba0-3062-4aa0-b8a0-4a351f48b5d8.png" 
             alt="Light Might Logo" 
-            className="h-72 md:h-90"
+            className="h-48 md:h-60"
           />
         </motion.div>
         
@@ -54,9 +54,7 @@ const Header = () => {
             <motion.a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className={`transition-colors font-light tracking-wider duration-300 ${
-                scrolled ? "text-black hover:text-lightmight-red" : "text-white hover:text-lightmight-red"
-              }`}
+              className="text-white hover:text-lightmight-red transition-colors font-light tracking-wider"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * (i + 1), duration: 0.5 }}
@@ -73,9 +71,7 @@ const Header = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
         >
           <button 
-            className={`p-2 transition-colors duration-300 ${
-              scrolled ? "text-black hover:text-lightmight-red" : "text-white hover:text-lightmight-red"
-            }`}
+            className="p-2 text-white hover:text-lightmight-red transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
