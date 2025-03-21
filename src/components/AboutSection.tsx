@@ -12,6 +12,10 @@ const AboutSection = () => {
     "Long COVID symptoms, including brain fog and fatigue"
   ];
 
+  // Split conditions into two arrays for left and right columns
+  const leftColumnConditions = conditions.slice(0, Math.ceil(conditions.length / 2));
+  const rightColumnConditions = conditions.slice(Math.ceil(conditions.length / 2));
+
   return (
     <section id="about" className="py-20 bg-lightmight-gray">
       <div className="container mx-auto px-4 md:px-6">
@@ -47,15 +51,30 @@ const AboutSection = () => {
                 </h3>
               </ScrollReveal>
 
-              <div className="grid grid-cols-2 gap-y-4">
-                {conditions.map((condition, index) => (
-                  <ScrollReveal key={index} delay={500 + (index * 50)}>
-                    <div className="flex items-start gap-2">
-                      <div className="w-2 h-2 rounded-full bg-lightmight-red mt-2 flex-shrink-0"></div>
-                      <p className="text-lightmight-dark font-light">{condition}</p>
-                    </div>
-                  </ScrollReveal>
-                ))}
+              <div className="grid grid-cols-2 gap-x-4">
+                {/* Left column */}
+                <div className="space-y-4">
+                  {leftColumnConditions.map((condition, index) => (
+                    <ScrollReveal key={index} delay={500 + (index * 50)}>
+                      <div className="flex items-start gap-2">
+                        <div className="w-2 h-2 rounded-full bg-lightmight-red mt-2 flex-shrink-0"></div>
+                        <p className="text-lightmight-dark font-light">{condition}</p>
+                      </div>
+                    </ScrollReveal>
+                  ))}
+                </div>
+                
+                {/* Right column */}
+                <div className="space-y-4">
+                  {rightColumnConditions.map((condition, index) => (
+                    <ScrollReveal key={index + leftColumnConditions.length} delay={500 + ((index + leftColumnConditions.length) * 50)}>
+                      <div className="flex items-start gap-2">
+                        <div className="w-2 h-2 rounded-full bg-lightmight-red mt-2 flex-shrink-0"></div>
+                        <p className="text-lightmight-dark font-light">{condition}</p>
+                      </div>
+                    </ScrollReveal>
+                  ))}
+                </div>
               </div>
 
               <ScrollReveal delay={800}>
