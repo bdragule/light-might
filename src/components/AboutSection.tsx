@@ -47,19 +47,10 @@ const AboutSection = () => {
                 </h3>
               </ScrollReveal>
 
-              <div className="grid grid-cols-2 gap-x-4 gap-y-3">
-                {conditions.slice(0, Math.ceil(conditions.length/2)).map((condition, index) => (
+              <div className="grid grid-cols-2 gap-y-4">
+                {conditions.map((condition, index) => (
                   <ScrollReveal key={index} delay={500 + (index * 50)}>
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 rounded-full bg-lightmight-red mt-2 flex-shrink-0"></div>
-                      <p className="text-lightmight-dark font-light">{condition}</p>
-                    </div>
-                  </ScrollReveal>
-                ))}
-                
-                {conditions.slice(Math.ceil(conditions.length/2)).map((condition, index) => (
-                  <ScrollReveal key={index + Math.ceil(conditions.length/2)} delay={500 + ((index + Math.ceil(conditions.length/2)) * 50)}>
-                    <div className="flex items-start space-x-2">
+                    <div className="flex items-start gap-2">
                       <div className="w-2 h-2 rounded-full bg-lightmight-red mt-2 flex-shrink-0"></div>
                       <p className="text-lightmight-dark font-light">{condition}</p>
                     </div>
