@@ -12,19 +12,42 @@ const Footer = () => {
   return (
     <footer className="bg-lightmight-dark text-white py-12">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <img 
-            src="/lovable-uploads/437d98ee-9fcc-464a-8786-5e4e099c5007.png" 
-            alt="Light Might Logo" 
-            className="h-10 md:h-12 mb-6 md:mb-0"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="md:col-span-1">
+            <img 
+              src="/lovable-uploads/437d98ee-9fcc-464a-8786-5e4e099c5007.png" 
+              alt="Light Might Logo" 
+              className="h-12 mb-4 invert"
+            />
+            <p className="text-white/70 text-sm mt-4">
+              Cutting-edge Photobiomodulation therapy to rejuvenate your skin at the cellular level.
+            </p>
+          </div>
+          
+          <div className="md:col-span-1">
+            <h3 className="text-lg font-medium mb-4">Contact Us</h3>
+            <div className="space-y-2 text-white/80">
+              <p>ViveLife! Center: (520) 797-9131</p>
+              <p>Email: pollyleigh@vivelifecenter.com</p>
+              <p>Locations: Tucson, AZ & Austin, TX</p>
+            </div>
+          </div>
+          
+          <div className="md:col-span-1">
+            <h3 className="text-lg font-medium mb-4">Quick Links</h3>
+            <div className="space-y-2">
+              <p><a href="#about" className="text-white/80 hover:text-white transition-colors">About PBM</a></p>
+              <p><a href="#benefits" className="text-white/80 hover:text-white transition-colors">Benefits</a></p>
+              <p><a href="#science" className="text-white/80 hover:text-white transition-colors">The Science</a></p>
+              <p><a href="#contact" className="text-white/80 hover:text-white transition-colors">Book Now</a></p>
+            </div>
+          </div>
         </div>
         
-        <div className="border-t border-white/20 pt-8 pb-4">
-          <h3 className="text-lg font-medium mb-4">Disclaimers:</h3>
-          <div className="space-y-3 text-sm text-white/70">
+        <div className="border-t border-white/20 pt-6 text-xs text-white/60">
+          <div className="space-y-2">
             {disclaimers.map((disclaimer, index) => (
-              <p key={index} className="flex">
+              <p key={index} className="flex items-start">
                 <span className="superscript mr-1">{index + 1}</span>
                 <span>{disclaimer}</span>
               </p>
@@ -32,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/20 pt-6 text-center text-sm text-white/50">
+        <div className="border-t border-white/20 mt-6 pt-6 text-center text-sm text-white/50">
           <p>© {new Date().getFullYear()} Light Might. All rights reserved.</p>
           <p className="mt-2">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
