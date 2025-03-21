@@ -104,7 +104,7 @@ const ScienceSection = () => {
                 Experience the power of PBM—heal faster, feel better, and get back to living.
               </p>
               <a 
-                href="#contact" 
+                href="mailto:pollyleigh@vivelifecenter.com?subject=Consultation Request" 
                 id="contact"
                 className="inline-block bg-lightmight-red text-white font-medium px-8 py-4 rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
