@@ -84,7 +84,7 @@ const AboutSection = () => {
 
               <ScrollReveal delay={800}>
                 <p className="mt-6 text-lg text-balance">
-                  When applied correctly—by a skilled professional using high-quality equipment—PBM accelerates recovery, reduces pain, and improves overall well-being. That's why elite athletes, military personnel, and medical professionals trust PBM for optimal healing.
+                  When applied correctly—by a skilled professional using high-quality equipment—PBM accelerates recovery, reduces pain, and improves overall well-being. That's why professional athletes, military personnel, and medical professionals trust PBM for use across a staggering spectrum of injuries and illnesses.
                 </p>
               </ScrollReveal>
             </div>
@@ -96,3 +96,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
