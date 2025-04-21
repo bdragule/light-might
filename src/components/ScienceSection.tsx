@@ -41,7 +41,7 @@ const ScienceSection = () => {
                   Meet the Experts:
                 </h3>
                 <p className="mb-6 text-balance">
-                  Dr. Elizabeth Lee Vliet, MD, a preventive medicine specialist with over 50 years of experience, leads our PBM practice alongside PBM-certified therapist Jim Houck.
+                  Dr. Elizabeth Lee Vliet, MD, a preventive medicine specialist with over 50 years of experience, leads the Vive! Life Center medical practice in coordination with Photobiomodulation & Laser-Certified Therapist Jim Houck.
                 </p>
                 
                 <h3 className="text-xl font-semibold mb-4 text-lightmight-red">
@@ -55,7 +55,7 @@ const ScienceSection = () => {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-medium">ViveLife! Center</p>
+                      <p className="font-medium">Vive! Life Center</p>
                     </div>
                   </div>
                   
@@ -119,3 +119,4 @@ const ScienceSection = () => {
 };
 
 export default ScienceSection;
+
