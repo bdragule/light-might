@@ -11,7 +11,7 @@ const BenefitsSection = () => {
               Why <span className="text-lightmight-red">Light Might?</span>
             </h2>
             <p className="text-xl text-center mb-12 text-lightmight-dark/70 font-extralight tracking-wide">
-              Faster results, better value.
+              Faster Healing, Better Value
             </p>
           </ScrollReveal>
 
@@ -43,7 +43,7 @@ const BenefitsSection = () => {
 
               <ScrollReveal delay={500}>
                 <p className="text-lg text-balance">
-                  Traditional PBM clinics would charge over $2,100 for the same energy output. Our approach ensures you feel better, faster, more affordably.
+                  Traditional PBM clinics would charge over $2,100 for the same energy output. Our approach ensures you heal faster and more affordably—so you get better and get back to life.
                 </p>
               </ScrollReveal>
 
@@ -58,11 +58,11 @@ const BenefitsSection = () => {
               <div className="relative">
                 <img 
                   src="/lovable-uploads/36f57679-45fa-4e2c-96bf-f73b9c824b70.png" 
-                  alt="Colonel U.S. Army Special Forces (RET.) Conditions treated: tinnitus, brain fog/memory, chronic back pain, chronic hip pain, cervical injury. (Name withheld by request. Not actual likeness.)" 
+                  alt="Man standing by Jeep" 
                   className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
                 />
                 <p className="text-sm italic mt-2 text-lightmight-dark/80">
-                  Colonel U.S. Army Special Forces (RET.) Conditions treated: tinnitus, brain fog/memory, chronic back pain, chronic hip pain, cervical injury. (Name withheld by request. Not actual likeness.)
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </div>
             </ScrollReveal>
@@ -74,4 +74,3 @@ const BenefitsSection = () => {
 };
 
 export default BenefitsSection;
-
