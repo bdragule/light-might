@@ -1,3 +1,4 @@
+
 import ScrollReveal from "./ScrollReveal";
 
 const AboutSection = () => {
@@ -23,7 +24,7 @@ const AboutSection = () => {
                   className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
                 />
                 <p className="text-sm italic mt-2 text-lightmight-dark/80">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Colonel U.S. Army Special Forces (RET.) Conditions treated: tinnitus, brain fog/memory, chronic back pain, chronic hip pain, cervical injury. (Name withheld by request. Not actual likeness.)
                 </p>
               </div>
             </ScrollReveal>
