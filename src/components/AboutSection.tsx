@@ -1,23 +1,11 @@
-
 import ScrollReveal from "./ScrollReveal";
-
 const AboutSection = () => {
-  const conditions = [
-    "Muscle, tendon, and ligament injuries",
-    "Chronic pain (back, neck, joints, migraines)",
-    "Post-surgical recovery",
-    "Skin conditions (acne, psoriasis, wrinkles, scars)",
-    "Neuropathy, inflammation, and arthritis",
-    "Hair loss (alopecia)",
-    "Long COVID symptoms, including brain fog and fatigue"
-  ];
+  const conditions = ["Muscle, tendon, and ligament injuries", "Chronic pain (back, neck, joints, migraines)", "Post-surgical recovery", "Skin conditions (acne, psoriasis, wrinkles, scars)", "Neuropathy, inflammation, and arthritis", "Hair loss (alopecia)", "Long COVID symptoms, including brain fog and fatigue"];
 
   // Split conditions into two arrays for left and right columns
   const leftColumnConditions = conditions.slice(0, Math.ceil(conditions.length / 2));
   const rightColumnConditions = conditions.slice(Math.ceil(conditions.length / 2));
-
-  return (
-    <section id="about" className="py-20 bg-lightmight-gray">
+  return <section id="about" className="py-20 bg-lightmight-gray">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
@@ -32,11 +20,7 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <ScrollReveal delay={200}>
               <div className="relative">
-                <img 
-                  src="/lovable-uploads/c81730eb-d0ca-46e4-8c15-205c1f6d221c.png" 
-                  alt="Red light therapy treatment" 
-                  className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
-                />
+                <img src="/lovable-uploads/c81730eb-d0ca-46e4-8c15-205c1f6d221c.png" alt="Red light therapy treatment" className="rounded-lg shadow-xl w-full h-96 object-cover object-center" />
                 <p className="text-sm italic mt-2 text-lightmight-dark/80">
                   Two weeks ago her morning training walk was not possible.
                 </p>
@@ -59,40 +43,32 @@ const AboutSection = () => {
               <div className="grid grid-cols-2 gap-x-4">
                 {/* Left column */}
                 <div className="space-y-4">
-                  {leftColumnConditions.map((condition, index) => (
-                    <ScrollReveal key={index} delay={500 + (index * 50)}>
+                  {leftColumnConditions.map((condition, index) => <ScrollReveal key={index} delay={500 + index * 50}>
                       <div className="flex items-start gap-2">
                         <div className="w-2 h-2 rounded-full bg-lightmight-red mt-2 flex-shrink-0"></div>
                         <p className="text-lightmight-dark font-light">{condition}</p>
                       </div>
-                    </ScrollReveal>
-                  ))}
+                    </ScrollReveal>)}
                 </div>
                 
                 {/* Right column */}
                 <div className="space-y-4">
-                  {rightColumnConditions.map((condition, index) => (
-                    <ScrollReveal key={index + leftColumnConditions.length} delay={500 + ((index + leftColumnConditions.length) * 50)}>
+                  {rightColumnConditions.map((condition, index) => <ScrollReveal key={index + leftColumnConditions.length} delay={500 + (index + leftColumnConditions.length) * 50}>
                       <div className="flex items-start gap-2">
                         <div className="w-2 h-2 rounded-full bg-lightmight-red mt-2 flex-shrink-0"></div>
                         <p className="text-lightmight-dark font-light">{condition}</p>
                       </div>
-                    </ScrollReveal>
-                  ))}
+                    </ScrollReveal>)}
                 </div>
               </div>
 
               <ScrollReveal delay={800}>
-                <p className="mt-6 text-lg text-balance">
-                  When applied correctly—by a skilled professional using high-quality equipment—PBM accelerates recovery, reduces pain, and improves overall well-being. That's why elite athletes, military personnel, and medical professionals trust PBM for optimal healing.
-                </p>
+                <p className="mt-6 text-lg text-balance">When applied correctly—by a skilled professional using high-quality equipment—PBM accelerates recovery, reduces pain, and improves overall well-being. That's why professional athletes, military personnel, and medical professionals trust PBM for use across a staggering spectrum of injuries and illnesses.</p>
               </ScrollReveal>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
