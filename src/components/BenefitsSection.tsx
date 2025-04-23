@@ -1,9 +1,6 @@
-
 import ScrollReveal from "./ScrollReveal";
-
 const BenefitsSection = () => {
-  return (
-    <section id="benefits" className="py-20 bg-white">
+  return <section id="benefits" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
@@ -56,21 +53,13 @@ const BenefitsSection = () => {
 
             <ScrollReveal delay={200} className="order-1 md:order-2">
               <div className="relative">
-                <img 
-                  src="/lovable-uploads/36f57679-45fa-4e2c-96bf-f73b9c824b70.png" 
-                  alt="Man standing by Jeep" 
-                  className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
-                />
-                <p className="text-sm italic mt-2 text-lightmight-dark/80">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <img src="/lovable-uploads/36f57679-45fa-4e2c-96bf-f73b9c824b70.png" alt="Man standing by Jeep" className="rounded-lg shadow-xl w-full h-96 object-cover object-center" />
+                <p className="text-sm italic mt-2 text-lightmight-dark/80">Colonel U.S. Army Special Forces (RET.) Conditions treated: tinnitus, brain fog/memory, chronic back pain, chronic hip pain, cervical injury. (Name withheld by request. Not actual likeness.)</p>
               </div>
             </ScrollReveal>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default BenefitsSection;
