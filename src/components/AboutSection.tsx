@@ -1,9 +1,6 @@
-
 import ScrollReveal from "./ScrollReveal";
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20">
+  return <section id="about" className="py-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
@@ -18,14 +15,8 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <ScrollReveal delay={200}>
               <div className="relative">
-                <img 
-                  src="/lovable-uploads/09923529-4994-493f-9b9c-5559a5930499.png" 
-                  alt="Man receiving red light therapy on his back" 
-                  className="rounded-lg shadow-xl w-full h-96 object-cover object-center"
-                />
-                <p className="text-sm italic mt-2 text-lightmight-dark/80">
-                  Colonel U.S. Army Special Forces (RET.) Conditions treated: tinnitus, brain fog/memory, chronic back pain, chronic hip pain, cervical injury. (Name withheld by request. Not actual likeness.)
-                </p>
+                <img src="/lovable-uploads/09923529-4994-493f-9b9c-5559a5930499.png" alt="Man receiving red light therapy on his back" className="rounded-lg shadow-xl w-full h-96 object-cover object-center" />
+                <p className="text-sm italic mt-2 text-lightmight-dark/80">Two weeks ago her morning training walk was not possible.</p>
               </div>
             </ScrollReveal>
 
@@ -51,8 +42,6 @@ const AboutSection = () => {
           </ScrollReveal>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
