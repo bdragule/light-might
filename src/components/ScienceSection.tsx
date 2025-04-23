@@ -1,9 +1,6 @@
-
 import ScrollReveal from "./ScrollReveal";
-
 const ScienceSection = () => {
-  return (
-    <section id="science" className="py-20 bg-lightmight-gray">
+  return <section id="science" className="py-20 bg-lightmight-gray">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
@@ -18,11 +15,7 @@ const ScienceSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <ScrollReveal delay={200}>
               <div className="bg-gradient-radial from-lightmight-red/20 to-transparent p-8 rounded-xl">
-                <img 
-                  src="/lovable-uploads/d9a6a481-520c-4a9e-b202-85408c4e85cb.png" 
-                  alt="Woman receiving red light therapy" 
-                  className="w-24 mx-auto mb-6"
-                />
+                <img src="/lovable-uploads/d9a6a481-520c-4a9e-b202-85408c4e85cb.png" alt="Woman receiving red light therapy" className="w-24 mx-auto mb-6" />
                 <p className="text-lg mb-6 text-balance">
                   PBM works by delivering precise red and near-infrared light (630-680 nm & 810-840 nm) to stimulate ATP production, boost metabolism, and promote tissue regeneration. It enhances blood flow, reduces inflammation, and accelerates healing<sup className="superscript">1,2</sup>.
                 </p>
@@ -40,9 +33,7 @@ const ScienceSection = () => {
                 <h3 className="text-xl font-semibold mb-4 text-lightmight-red">
                   Meet the Experts:
                 </h3>
-                <p className="mb-6 text-balance">
-                  Dr. Elizabeth Lee Vliet, MD, a preventive medicine specialist with over 50 years of experience, leads our PBM practice alongside PBM-certified therapist Jim Houck.
-                </p>
+                <p className="mb-6 text-balance">Dr. Elizabeth Lee Vliet, MD, a preventive medicine specialist with over 50 years of experience, leads the Vive! Life Center medical practice in coordination with Photobiomodulation &amp; Laser-Certified Therapist Jim Houck.</p>
                 
                 <h3 className="text-xl font-semibold mb-4 text-lightmight-red">
                   Get in Touch:
@@ -103,19 +94,13 @@ const ScienceSection = () => {
               <p className="text-lg font-medium mb-6">
                 Experience the power of PBM—heal faster, feel better, and get back to living.
               </p>
-              <a 
-                href="mailto:pollyleigh@vivelifecenter.com?subject=Consultation Request" 
-                id="contact"
-                className="inline-block bg-lightmight-red text-white font-medium px-8 py-4 rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-              >
+              <a href="mailto:pollyleigh@vivelifecenter.com?subject=Consultation Request" id="contact" className="inline-block bg-lightmight-red text-white font-medium px-8 py-4 rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                 Book a Consultation
               </a>
             </div>
           </ScrollReveal>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ScienceSection;
