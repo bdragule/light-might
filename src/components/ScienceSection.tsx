@@ -46,7 +46,7 @@ const ScienceSection = () => {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-medium">ViveLife! Center</p>
+                      <p className="font-medium">Vive! Life Center</p>
                     </div>
                   </div>
                   
