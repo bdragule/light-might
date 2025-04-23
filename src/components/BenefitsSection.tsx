@@ -39,9 +39,7 @@ const BenefitsSection = () => {
               </ScrollReveal>
 
               <ScrollReveal delay={500}>
-                <p className="text-lg text-balance">
-                  Traditional PBM clinics would charge over $2,100 for the same energy output. Our approach ensures you heal faster and more affordably—so you get better and get back to life.
-                </p>
+                <p className="text-lg text-balance">Traditional PBM clinics would charge over $2,100 for the same energy output. Our approach ensures you feel better, faster, more affordably.</p>
               </ScrollReveal>
 
               <ScrollReveal delay={600}>
