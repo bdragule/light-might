@@ -1,4 +1,3 @@
-
 import ScrollReveal from "./ScrollReveal";
 const ScienceSection = () => {
   return <section id="science" className="py-20 bg-lightmight-gray">
@@ -34,7 +33,7 @@ const ScienceSection = () => {
                 <h3 className="text-xl font-semibold mb-4 text-lightmight-red">
                   Meet the Experts:
                 </h3>
-                <p className="mb-6 text-balance">Dr. Elizabeth Lee Vliet, MD, a preventive medicine specialist with over 50 years of experience, leads the Vive! Life Center medical practice in coordination with Photobiomodulation &amp; Laser-Certified Therapist Jim Houck.</p>
+                <p className="mb-6 text-balance">Photobiomodulation &amp; Laser-Certified Therapist Jim Houck.</p>
                 
                 <h3 className="text-xl font-semibold mb-4 text-lightmight-red">
                   Get in Touch:
