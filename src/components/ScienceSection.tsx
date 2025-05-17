@@ -1,7 +1,5 @@
-
 import ScrollReveal from "./ScrollReveal";
 import { Button } from "./ui/button";
-
 const ScienceSection = () => {
   return <section id="science" className="py-20 bg-lightmight-gray">
       <div className="container mx-auto px-4 md:px-6">
@@ -33,9 +31,7 @@ const ScienceSection = () => {
 
             <ScrollReveal delay={300}>
               <div className="bg-white p-8 rounded-xl shadow-lg">
-                <h3 className="text-xl font-semibold mb-4 text-lightmight-red">
-                  Meet the Experts:
-                </h3>
+                <h3 className="text-xl font-semibold mb-4 text-lightmight-red">Meet the Expert:</h3>
                 <p className="mb-6 text-balance">Photobiomodulation &amp; Laser-Certified Therapist Jim Houck.</p>
                 
                 <h3 className="text-xl font-semibold mb-4 text-lightmight-red">
