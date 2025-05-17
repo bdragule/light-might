@@ -12,7 +12,7 @@ const htmlPlugin = (): Plugin => {
     transformIndexHtml(html, ctx) {
       // Only modify the output in production build
       if (ctx.bundle) {
-        // Remove the GPT Engineer script from production builds
+        // Remove the GPT Engineer script from production builds while preserving structure
         return html.replace(
           /<script src="https:\/\/cdn\.gpteng\.co\/gptengineer\.js" type="module"><\/script>/g,
           ''
@@ -37,6 +37,14 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    // Ensure proper HTML output
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
     },
   },
 }));
