@@ -1,4 +1,7 @@
+
 import ScrollReveal from "./ScrollReveal";
+import { Button } from "./ui/button";
+
 const ScienceSection = () => {
   return <section id="science" className="py-20 bg-lightmight-gray">
       <div className="container mx-auto px-4 md:px-6">
@@ -83,7 +86,7 @@ const ScienceSection = () => {
               <p className="text-lg font-medium mb-6">
                 Experience the power of PBM—heal faster, feel better, and get back to living.
               </p>
-              <a href="mailto:pollyleigh@vivelifecenter.com?subject=Consultation Request" id="contact" className="inline-block bg-lightmight-red text-white font-medium px-8 py-4 rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <a href="mailto:zebrayankee@protonmail.com?subject=Consultation Request" id="contact" className="inline-block bg-lightmight-red text-white font-medium px-8 py-4 rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                 Book a Consultation
               </a>
             </div>

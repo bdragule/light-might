@@ -41,7 +41,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <a 
-              href="mailto:pollyleigh@vivelifecenter.com?subject=Consultation Request" 
+              href="mailto:zebrayankee@protonmail.com?subject=Consultation Request" 
               className="inline-block bg-lightmight-red text-white text-lg font-light px-8 py-4 rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-glow tracking-wider"
             >
               Book a Consultation
