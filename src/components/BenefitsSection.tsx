@@ -15,9 +15,7 @@ const BenefitsSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <ScrollReveal delay={300}>
-                <p className="text-lg mb-6 text-balance">
-                  Unlike most PBM providers who charge per light panel placement (around $80-$100 per cycle), Light Might maximizes results efficiently. Instead of slow, costly treatments over multiple visits, we use three panels simultaneously and run multiple cycles per session, delivering thousands of times more light energy per appointment.
-                </p>
+                <p className="text-lg mb-6 text-balance">Unlike most PBM providers who charge per light panel placement (around $80-$100 per cycle), Light Might maximizes results efficiently. Instead of slow, costly treatments over multiple visits, we use multiple panels simultaneously and run multiple cycles per session, delivering thousands of times more light energy per appointment.</p>
               </ScrollReveal>
 
               <ScrollReveal delay={400}>
